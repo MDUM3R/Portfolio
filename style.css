@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Apply to the entire body and html */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the main content grow to fill available space */
+main {
+  flex: 1;
+}
+
+
+::selection {
+  background-color: var(--secondary-color); /* Light Green background */
+}
+
+
+:root {
+  /*global variables - by variables wwe change the color or any other property at a time*/
+  --primary-color: #222629;
+  --secondary-color: #61892f;
+  --third-color: #86c232;
+  --fourth-color: #edede9;
+  --fifth-color: #fff;
+  --sixth-color: #000;
+  --service-card-bg: #383b3e;
+}
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--service-card-bg);
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    /* background-color: var(--primary-color); */
+    background-color: var(--fourth-color);
+    border-radius: 1rem;
+}
+
+body{
+    background-color: var(--primary-color);
+    /* Segoe UI (Windows)
+    Roboto (Android/Google)
+    Helvetica Neue (Mac)
+    Arial, sans-serif fallback */
+}
+
+p {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: var(--fifth-color);
+}
+
+li {
+    list-style: none;
+}
+
+/* nav bar section */
+
+.bg-img {
+  background-image: url();
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.logo a {
+  color: var(--third-color);
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: var(--third-color);
+}
+
+.navbar-toggler {
+  border-color: var(--fifth-color) !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* Converts black icon to white */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 2rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--secondary-color) !important; /* Change this to your desired color */
+}
+
+.nav-link.active {
+  color: var(--third-color) !important; /* Your green shade */
+  /* font-weight: bold; */
+}
+
+
+/* home section */
+
+/* .hero-section .container{
+    display: grid;
+    place-content: center;
+    height: inherit; */
+
+    /* height: 31.7rem;
+} */
+
+
+/* .hero-section{
+  height: 43rem !important;
+} */
+
+/* .hero-section {
+  overflow: hidden;
+  padding-bottom: 20px
+} */
+
+.bg-main{
+    height: 80vh;
+    position: relative;
+}
+
+.main-text {
+    color: var(--fifth-color);
+    font-weight: bold;
+}
+
+#sup-text{
+    color: var(--fourth-color);
+}
+
+.hero-btn {
+    background-color: var(--secondary-color);
+    color: var(--fifth-color);
+}
+
+.hero-btn:hover {
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+}
+
+.hero-btn:active{
+    background-color: var(--secondary-color) !important;
+    color: var(--fifth-color) !important;
+    border-color: var(--third-color) !important;
+}
+
+.hero-img{
+    width: 100%;
+    height: auto;
+}
+
+/* .hero-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+} */
+
+
+/* about section */
+
+.comm-h2-block {
+  color: var(--fifth-color);
+}
+
+.comm-p-block {
+  color: var(--fourth-color);
+  /* text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+  text-decoration-thickness: 0.2rem;
+  text-decoration-skip-ink: none ;
+  padding-bottom: 1rem; */
+}
+
+.mid-underline {
+    width: 20%; /* Adjust width */
+    height: 4px; /* Ensure height is set */
+    background-color: var(--secondary-color); /* Line color */
+    /* margin-top: 10px; Space between text and line */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+}
+
+.hero-video--section {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+#myName {
+  text-transform: uppercase;
+  color: var(--third-color);
+  font-style: italic;
+}
+
+
+/* services section in home page */
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.8);
+  transition: all 0.4s ease;
+}
+
+.icon-span {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--secondary-color);
+  color: var(--fifth-color);
+}
+
+.servic-card-bg {
+  background-color: var(--service-card-bg);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+/* .service-card-img {
+  width: 100%;
+  height: 5rem;
+  object-fit: cover;
+} */
+
+/* skils section */
+
+.progress {
+  background-color: var(--fourth-color)
+}
+
+#progress-bars {
+  font-weight: bold;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+
+/* footer */
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .CV-added-footer {
+    height: 14rem !important;
+  }
+}
+
+#footer-container {
+  height: 10rem;
+  background-color: var(--service-card-bg);
+}
+
+#footer-icons {
+  margin: 0;
+  padding: 0;
+}
+
+#footer-upper-div {
+  height: 70%;
+}
+
+#footer-icons i {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-right: 0.4rem;
+  color: var(--fifth-color);
+}
+
+/* #footer-icons a {
+  margin: 0 6px;  
+} */
+
+
+#gmail {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* #gmail a {
+  margin-left: 100px;
+} */
+
+.copyrigth p i{
+  color: var(--fifth-color);
+}
+
+.copyrigth p {
+  color: var(--fifth-color);
+}
+
+
+
+

@@ -1,0 +1,37 @@
+.secondary-color {
+    background-color: var(--service-card-bg);
+}
+
+
+/* progress bars */
+/* .ui-ux-progress-bars {
+    background-color: #9b59b6 !important;
+}
+
+.frontend-progress-bars {
+    background-color: #3498db !important;
+}
+
+.backend-progress-bars {
+    background-color: #e67e22 !important;
+}
+
+.other-skills-progress-bars {
+    background-color: #1abc9c !important;
+} */
+
+
+/* Smooth Fill Animation */
+@keyframes fillAnimation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: var(--fill-width);
+    }
+  }
+  
+  .progress-bar {
+    animation: fillAnimation 2s ease-in-out forwards;
+  }
+  

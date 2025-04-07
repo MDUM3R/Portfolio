@@ -1,0 +1,64 @@
+
+/* contact form right icons */
+
+.form-div {
+  background-color: var(--service-card-bg);
+  padding: 25px;
+}
+
+.form-input-bg {
+    background-color: var(--fourth-color);
+}
+
+/* conatct first div background image */
+/* .contact-img {
+    background-image: url(/images/contact-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+
+
+/* contact and QR code */
+
+
+.QR-container {
+    /* width: 16rem;  Set a fixed or max width */
+    height: 100%; /* Set a fixed or max height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  /* Prevents image overflow */
+}
+
+.QR-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the full image fits */
+    /* opacity: 90%; */
+    cursor: pointer;
+    background-color: var(--fourth-color);
+}
+
+
+
+/* map integration */
+.map-container {
+    position: relative;
+    height: 30rem;
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+.map-container iframe {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+
+

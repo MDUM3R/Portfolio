@@ -1,0 +1,145 @@
+/* Animation */
+
+/*transforn animation on loading */
+
+@keyframes right-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes bottom-top {
+  from {
+    opacity: 0;
+    transform: translateY(+100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.right-left-animation {
+  animation: right-left 1.5s linear;
+}
+
+.bottom-top-animation {
+  animation: bottom-top 1.5s linear;
+}
+
+/* @media (min-width: 0px) and (max-width: 576px) {
+  @keyframes top-bottom {
+    from {
+      transform: translateY(-100px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
+}
+
+.top-bottom-animation {
+  animation: top-bottom 2s linear;
+} */
+
+
+
+/*transform animation on scorling */
+
+@keyframes right-left-onscorling {
+  from {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+.right-left-onscorling-animation {
+  animation: right-left-onscorling 1.5s ease-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+  will-change: transform, opacity;
+}
+
+@keyframes left-right-onscorling {
+  from {
+    opacity: 0;
+    transform: translateX(+100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.left-right-onscorling-animation {
+  animation: left-right-onscorling 1.5s linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+
+
+/* scaling animation on scroling */
+
+@keyframes bottom-top-scal {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+  
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+}
+
+.bottom-top-scal {
+    animation: bottom-top-scal 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+
+/* scal on hover on larg screens */
+
+@media (min-width:922px) and (max-width:1400px) {
+  #footer-icons i {
+    transition: all 0.2s ease-in-out;
+  }
+
+  #footer-icons i:hover {
+    color: var(--third-color);
+    transform: scale(1.2);
+  }
+
+  #gmail a {
+    transition: all 0.2s ease-in-out;
+  }
+
+  #gmail a:hover{
+    color: var(--third-color);
+    transform: scale(1.1);
+  }
+  
+}
+
+/* transform: translateX(-100px); */
+/* clip-path: inset(100% 100% 0 0); */
+
+/* transform: translateX(0px); */
+/* clip-path: inset(0 0 0 0); */
+
+

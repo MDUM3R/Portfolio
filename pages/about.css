@@ -1,0 +1,75 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+    text-align: justify;
+}
+
+/* hero section */
+.hero-img {
+  opacity: 80%;
+}
+
+/* education section */
+
+.graduation {
+  background-color: var(--service-card-bg);
+}
+
+.puc {
+  height: 35rem;
+  overflow-x: hidden !important;
+  background-color: var(--service-card-bg);
+}
+
+.school {
+  height: 35rem;
+  overflow-x: hidden !important;
+  background-color: var(--service-card-bg);
+}
+
+
+/* experiance section */
+
+#internship {
+  background-color: var(--primary-color);
+}
+
+.internship-card {
+  background-color: var(--service-card-bg);
+}
+
+.section-title {
+  font-size: 2rem;
+  /* border-bottom: 2px solid #9acd32; */
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.card ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0;
+}
+
+.card ul li {
+  position: relative;
+  padding-left: 2rem; /* Space for emoji */
+  margin-bottom: 10px;
+}
+
+.card ul li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.8);
+  transition: all 0.4s ease;
+}
+
+
