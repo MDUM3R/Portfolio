@@ -191,14 +191,22 @@
     </footer>
 
 
-      <!-- AOS Animation JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-      <script>
-          AOS.init({
-              duration: 1000,  /* Animation duration */
-              once: false,      /* Keeps animating on scroll */
-          });
-      </script>
+    <!-- AOS Animation JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            AOS.init({
+                duration: 800,      //Animation duration in ms
+                once: false,       // Allow animation to trigger every time on scroll
+                offset: 100,      // Trigger point (tweak this for laptop screens)
+                mirror: true,      // Allow animations to happen again when scrolling up
+                easing: 'ease-in-out', // Smooth easing
+            });
+
+            // Refresh AOS when all images, fonts, and layout are loaded
+            window.addEventListener('load', AOS.refresh);
+        });
+    </script>
   
 
 <!--     <script src="../script.js"></script> -->
